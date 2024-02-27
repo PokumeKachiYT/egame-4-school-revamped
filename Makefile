@@ -1,4 +1,4 @@
 PYC=python
 
 all:
-	$(PYC) main.py
+	$(PYC) src/main.py
