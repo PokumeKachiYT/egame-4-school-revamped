@@ -53,7 +53,6 @@ class MainWindow(QWidget):
         super().__init__(*args,**kwargs)
 
         self.setWindowTitle('Hello World')
-        self.setStyleSheet('background-color: #AAAABB')
         self.showFullScreen()
 
         menu = Menu()

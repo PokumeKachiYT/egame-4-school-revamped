@@ -15,14 +15,14 @@ def get_ip_address():
 
     return ip_address
 
-class MyRequestHandler(SimpleHTTPRequestHandler):
+class RequestHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         super().do_GET()
         print('hehe')
 
 def init(port=8080):
     ip_address = get_ip_address()
-    httpd = HTTPServer(('',port), MyRequestHandler)
+    httpd = HTTPServer(('',port), RequestHandler)
 
     print(f"Server running on http://{ip_address}:{port}/")
 
